@@ -1,0 +1,318 @@
+/* ================================
+   DERICK ERVIN - SOC LAB TRACKER
+   ================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg: #02070c;
+    --panel: #071018;
+    --panel-light: #0a1720;
+    --cyan: #00e5ff;
+    --cyan-dark: #009db5;
+    --text: #d8e5eb;
+    --muted: #78909c;
+    --border: #16303c;
+    --green: #00e676;
+    --yellow: #ffd740;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: "Courier New", monospace;
+
+    background-image:
+        linear-gradient(rgba(0, 229, 255, 0.025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 229, 255, 0.025) 1px, transparent 1px);
+
+    background-size: 35px 35px;
+}
+
+
+/* HEADER */
+
+.hero {
+    max-width: 1200px;
+    margin: auto;
+    padding: 80px 25px 55px;
+    border-bottom: 1px solid var(--border);
+}
+
+.portfolio-label {
+    color: var(--cyan);
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+}
+
+.hero h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: clamp(55px, 9vw, 110px);
+    line-height: .85;
+    letter-spacing: -5px;
+    color: #e8f4f8;
+}
+
+.hero h1 span {
+    color: transparent;
+    -webkit-text-stroke: 2px var(--cyan);
+}
+
+.subtitle {
+    margin-top: 30px;
+    color: var(--muted);
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+
+/* MAIN CONTAINER */
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 25px 80px;
+}
+
+
+/* DASHBOARD */
+
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border: 1px solid var(--border);
+    background: rgba(5, 14, 20, 0.85);
+}
+
+.stat {
+    padding: 30px 20px;
+    text-align: center;
+    border-right: 1px solid var(--border);
+}
+
+.stat:last-child {
+    border-right: none;
+}
+
+.stat h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    color: #ffffff;
+}
+
+.stat p {
+    margin-top: 8px;
+    color: var(--muted);
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+
+/* PROGRESS */
+
+.progress-section {
+    padding: 25px 0 55px;
+}
+
+.progress-title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    color: var(--muted);
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+#progressPercent {
+    color: var(--cyan);
+}
+
+.progress-bar {
+    height: 5px;
+    width: 100%;
+    background: #10202a;
+    overflow: hidden;
+}
+
+#progressFill {
+    height: 100%;
+    width: 0%;
+    background: var(--cyan);
+    transition: width .4s ease;
+}
+
+
+/* SECTION TITLE */
+
+.section-title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.section-title span {
+    color: var(--cyan);
+}
+
+
+/* LAB CARDS */
+
+.labs {
+    margin-top: 10px;
+}
+
+.lab-card {
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    border-top: 1px solid var(--border);
+    padding: 30px 0;
+    transition: .25s ease;
+}
+
+.lab-card:last-child {
+    border-bottom: 1px solid var(--border);
+}
+
+.lab-card:hover {
+    background: rgba(0, 229, 255, 0.025);
+}
+
+.lab-number {
+    color: var(--cyan);
+    font-size: 14px;
+    padding-top: 5px;
+}
+
+.lab-content h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    color: #f0f7fa;
+    margin-bottom: 7px;
+}
+
+.tools {
+    color: var(--cyan) !important;
+    font-size: 11px !important;
+    letter-spacing: 1px;
+    margin-bottom: 15px !important;
+}
+
+.lab-content p {
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.7;
+    max-width: 800px;
+}
+
+
+/* STATUS BUTTONS */
+
+.status-buttons {
+    display: flex;
+    gap: 8px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.status-btn {
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--muted);
+    padding: 8px 13px;
+    font-family: "Courier New", monospace;
+    font-size: 10px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.status-btn:hover {
+    border-color: var(--cyan);
+    color: var(--cyan);
+}
+
+.status-btn.active-not-started {
+    border-color: var(--muted);
+    color: #ffffff;
+    background: rgba(120, 144, 156, .12);
+}
+
+.status-btn.active-wip {
+    border-color: var(--yellow);
+    color: var(--yellow);
+    background: rgba(255, 215, 64, .08);
+}
+
+.status-btn.active-done {
+    border-color: var(--green);
+    color: var(--green);
+    background: rgba(0, 230, 118, .08);
+}
+
+
+/* COMPLETED LAB */
+
+.lab-card.completed h3 {
+    color: var(--green);
+}
+
+.lab-card.completed .lab-number {
+    color: var(--green);
+}
+
+
+/* FOOTER */
+
+footer {
+    border-top: 1px solid var(--border);
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px 25px 50px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    color: var(--muted);
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .hero {
+        padding-top: 50px;
+    }
+
+    .hero h1 {
+        letter-spacing: -2px;
+    }
+
+    .dashboard {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .stat {
+        border-bottom: 1px solid var(--border);
+    }
+
+    .lab-card {
+        grid-template-columns: 45px 1fr;
+    }
+
+    .lab-content h3 {
+        font-size: 18px;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+}
