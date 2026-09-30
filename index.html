@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Derick Ervin | SOC Lab Tracker</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="hero">
+
+        <p class="portfolio-label">
+            // DERICK ERVIN &nbsp;&nbsp; // CYBERSECURITY PORTFOLIO
+        </p>
+
+        <h1>
+            SOC LAB<br>
+            <span>TRACKER</span>
+        </h1>
+
+        <p class="subtitle">
+            HANDS-ON SECURITY PROJECTS // BLUE TEAM // INCIDENT RESPONSE
+        </p>
+
+    </header>
+
+
+    <!-- DASHBOARD -->
+    <main class="container">
+
+        <section class="dashboard">
+
+            <div class="stat">
+                <h2 id="totalLabs">10</h2>
+                <p>TOTAL LABS</p>
+            </div>
+
+            <div class="stat">
+                <h2 id="completedLabs">0</h2>
+                <p>COMPLETED</p>
+            </div>
+
+            <div class="stat">
+                <h2 id="wipLabs">0</h2>
+                <p>IN PROGRESS</p>
+            </div>
+
+            <div class="stat">
+                <h2 id="labHours">0+</h2>
+                <p>LAB HOURS</p>
+            </div>
+
+        </section>
+
+
+        <!-- PROGRESS -->
+        <section class="progress-section">
+
+            <div class="progress-title">
+                <span>COMPLETION PROGRESS</span>
+                <span id="progressPercent">0%</span>
+            </div>
+
+            <div class="progress-bar">
+                <div id="progressFill"></div>
+            </div>
+
+        </section>
+
+
+        <!-- LABS -->
+        <section class="labs">
+
+            <h2 class="section-title">
+                <span>//</span> SOC LABS
+            </h2>
+
+
+            <!-- LAB 01 -->
+            <article class="lab-card" data-hours="4">
+
+                <div class="lab-number">01</div>
+
+                <div class="lab-content">
+
+                    <h3>SIEM Log Monitoring & Threat Detection</h3>
+
+                    <p class="tools">
+                        Splunk • Windows Event Logs • Threat Detection
+                    </p>
+
+                    <p>
+                        Analyze security logs, identify suspicious activity,
+                        investigate alerts, and document findings from a SOC
+                        analyst perspective.
+                    </p>
+
+                    <div class="status-buttons">
+                        <button class="status-btn not-started">
+                            NOT STARTED
+                        </button>
+
+                        <button class="status-btn wip">
+                            WIP
+                        </button>
+
+                        <button class="status-btn done">
+                            DONE
+                        </button>
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- LAB 02 -->
+            <article class="lab-card" data-hours="3">
+
+                <div class="lab-number">02</div>
+
+                <div class="lab-content">
+
+                    <h3>Phishing Investigation & Incident Response</h3>
+
+                    <p class="tools">
+                        Email Analysis • Microsoft Defender • Incident Response
+                    </p>
+
+                    <p>
+                        Investigate a simulated phishing email, analyze
+                        indicators of compromise, determine risk, and document
+                        an appropriate incident response.
+                    </p>
+
+                    <div class="status-buttons">
+                        <button class="status-btn not-started">
+                            NOT STARTED
+                        </button>
+
+                        <button class="status-btn wip">
+                            WIP
+                        </button>
+
+                        <button class="status-btn done">
+                            DONE
+                        </button>
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- LAB 03 -->
+            <article class="lab-card" data-hours="3">
+
+                <div class="lab-number">03</div>
+
+                <div class="lab-content">
+
+                    <h3>Wireshark Network Traffic Analysis</h3>
+
+                    <p class="tools">
+                        Wireshark • TCP/IP • DNS • HTTP
+                    </p>
+
+                    <p>
+                        Capture and analyze network packets to identify normal
+                        traffic, suspicious connections, DNS activity, and
+                        potential security events.
+                    </p>
+
+                    <div class="status-buttons">
+                        <button class="status-btn not-started">
+                            NOT STARTED
+                        </button>
+
+                        <button class="status-btn wip">
+                            WIP
+                        </button>
+
+                        <button class="status-btn done">
+                            DONE
+                        </button>
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- LAB 04 -->
+            <article class="lab-card" data-hours="4">
+
+                <div class="lab-number">04</div>
+
+                <div class="lab-content">
+
+                    <h3>Microsoft Defender Endpoint Investigation</h3>
+
+                    <p class="tools">
+                        Microsoft Defender • Windows Security • Endpoint Security
+                    </p>
+
+                    <p>
+                        Review endpoint security information and investigate
+                        suspicious activity using Microsoft security tools.
+                    </p>
+
+                    <div class="status-buttons">
+                        <button class="status-btn not-started">
+                            NOT STARTED
+                        </button>
+
+                        <button class="status-btn wip">
+                            WIP
+                        </button>
+
+                        <button class="status-btn done">
+                            DONE
+                        </button>
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- LAB 05 -->
+            <article class="lab-card" data-hours="3">
+
+                <div class="lab-number">05</div>
+
+                <div class="lab-content">
+
+                    <h3>Windows Event Log Analysis</h3>
+
+                    <p class="tools">
+                        Event Viewer • Windows Logs • PowerShell
+                    </p>
+
+                    <p>
+                        Examine Windows security events and identify logon
+                        activity, failed authentication attempts, account
+                        events, and other security-relevant activity.
+                    </p>
+
+                    <div class="status-buttons">
+                        <button class="status-btn not-started">
+                            NOT STARTED
+                        </button>
+
+                        <button class="status-btn wip">
+                            WIP
+                        </button>
+
+                        <button class="status-btn done">
+                            DONE
+                        </button>
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- LAB 06 -->
+            <article class="lab-card" data-hours="4">
+
+                <div class="lab-number">06</div>
+
+                <div class="lab-content">
+
+                    <h3>AWS Security Monitoring</h3>
+
+                    <p class="tools">
+                        AWS • IAM • CloudTrail • Cloud Security
+                    </p>
+
+                    <p>
+                        Review AWS security configurations and logs while
+                        investigating user activity and access permissions.
+                    </p>
+
+                    <div class="status-buttons">
+                        <button class="status-btn not-started">
+                            NOT STARTED
+                        </button>
+
+                        <button class="status-btn wip">
+                            WIP
+                        </button>
+
+                        <button class="status-btn done">
+                            DONE
+                        </button>
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- LAB 07 -->
+            <article class="lab-card" data-hours="5">
+
+                <div class="lab-number">07</div>
+
+                <div class="lab-content">
+
+                    <h3>Active Directory Security</h3>
+
+                    <p class="tools">
+                        Windows Server • Active Directory • Group Policy
+                    </p>
+
+                    <p>
+                        Build and review Active Directory users, groups,
+                        permissions, security policies, and authentication
+                        controls.
+                    </p>
+
+                    <div class="status-buttons">
+                        <button class="status-btn not-started">
+                            NOT STARTED
+                        </button>
+
+                        <button class="status-btn wip">
+                            WIP
+                        </button>
+
+                        <button class="status-btn done">
+                            DONE
+                        </button>
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- LAB 08 -->
+            <article class="lab-card" data-hours="4">
+
+                <div class="lab-number">08</div>
+
+                <div class="lab-content">
+
+                    <h3>Vulnerability Assessment</h3>
+
+                    <p class="tools">
+                        Nmap • Vulnerability Scanning • Risk Analysis
+                    </p>
+
+                    <p>
+                        Identify exposed systems and services, analyze potential
+                        vulnerabilities, and document remediation priorities.
+                    </p>
+
+                    <div class="status-buttons">
+                        <button class="status-btn not-started">
+                            NOT STARTED
+                        </button>
+
+                        <button class="status-btn wip">
+                            WIP
+                        </button>
+
+                        <button class="status-btn done">
+                            DONE
+                        </button>
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- LAB 09 -->
+            <article class="lab-card" data-hours="5">
+
+                <div class="lab-number">09</div>
+
+                <div class="lab-content">
+
+                    <h3>Threat Hunting Investigation</h3>
+
+                    <p class="tools">
+                        SIEM • IOC Analysis • Threat Hunting
+                    </p>
+
+                    <p>
+                        Search security data for suspicious indicators and
+                        investigate activity that could represent malicious
+                        behavior.
+                    </p>
+
+                    <div class="status-buttons">
+                        <button class="status-btn not-started">
+                            NOT STARTED
+                        </button>
+
+                        <button class="status-btn wip">
+                            WIP
+                        </button>
+
+                        <button class="status-btn done">
+                            DONE
+                        </button>
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- LAB 10 -->
+            <article class="lab-card" data-hours="5">
+
+                <div class="lab-number">10</div>
+
+                <div class="lab-content">
+
+                    <h3>SOC Incident Investigation & Report</h3>
+
+                    <p class="tools">
+                        Incident Response • Documentation • Security Analysis
+                    </p>
+
+                    <p>
+                        Perform an end-to-end security investigation and create
+                        a professional SOC incident report documenting evidence,
+                        findings, containment, and remediation.
+                    </p>
+
+                    <div class="status-buttons">
+                        <button class="status-btn not-started">
+                            NOT STARTED
+                        </button>
+
+                        <button class="status-btn wip">
+                            WIP
+                        </button>
+
+                        <button class="status-btn done">
+                            DONE
+                        </button>
+                    </div>
+
+                </div>
+
+            </article>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+            DERICK ERVIN // CYBERSECURITY PORTFOLIO
+        </p>
+
+        <p>
+            SECURITY+ • NETWORK+ • CYBERSECURITY • NETWORKING
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
